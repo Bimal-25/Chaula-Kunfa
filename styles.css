@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top left, #e8cb94, #eadec8, #eadec8);
+  color: #4a2c2a;
+}
+
+/* Sticky Header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to right, #dd8e5a, #dd8e5a);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 75px;
+  height: px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sticky-header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.contact p {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact p .book-now-button {
+  display: inline-block;
+  background-color: #4b2e1e; /* Rich dark brown */
+  color: #f5ebdd; /* Light beige text */
+  font-family: "Georgia", serif; /* Elegant serif font */
+  font-size: 0.95rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: black;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1rem;
+  background-color: coral;
+  padding: 1rem;
+  border-radius: 10px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 3px solid black;
+}
+
+/* Product Cards */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 2px solid #f39c12;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 3px solid #f39c12;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #d35400;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #4a2c2a;
+  color: #fff;
+}
+
+.social-icons img {
+  width: 38px;
+  margin: 0 10px;
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sticky-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
